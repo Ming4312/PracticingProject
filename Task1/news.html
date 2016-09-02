@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="myApp">
     <head>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
     </head>
-    <body>
+    <body ng-controller="newsController">
         <table>
             <thead>
                 <tr>
@@ -11,10 +12,9 @@
                 </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>
-                        
-                    </td>
+                <tr ng-repeat = "event in events">
+                    <td>Location: {{event.location}}</td>
+                    <td>Holding date: {{event.date}}</td>
                 </tr>
             </tbody>
             
