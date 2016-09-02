@@ -1,28 +1,26 @@
 <!DOCTYPE html>
-<html>
+<html lang="en" ng-app="myApp">
     <head>
+        <title>Home</title>
         <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
     </head>
-    <body>
-        
-        <div class=container>
-            <div class=topImage></div>
-            <table class=content>
+    <body ng-controller= "homeController">
+            <table border = 0px>
                 <tr>
-                    <td class=left_bar>
+                    <td>
                         <ul>
-                            <li><a href="news.html">What's new</a></li>
+                            <li><a name="news">What's new</a></li>
                             <li><a href=''>Photo</a></li>
                             <li><a href=''>Video</a></li>
                             <li><a href=''>Contact Us</a></li>
+                            
                         </ul>
                     </td>
+                        
                 </tr>
             </table>
-          
-           
-        </div>
+            
     </body>
 </html>

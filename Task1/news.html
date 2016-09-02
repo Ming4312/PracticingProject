@@ -1,23 +1,45 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="myApp">
     <head>
+        <link rel="stylesheet" href="css/style.css" type="text/css" />
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>
         <script type="text/javascript" src="js/home.js"></script>
     </head>
     <body ng-controller="newsController">
-        <table>
-            <thead>
+        <div class=container>
+            <div class=topImage></div>
+            <table class=content>
                 <tr>
-                    <th>What's new</th>
+                    <td class=left_bar>
+                        <ul>
+                            <li><a href="news.html">What's new</a></li>
+                            <li><a href=''>Photo</a></li>
+                            <li><a href=''>Video</a></li>
+                            <li><a href=''>Contact Us</a></li>
+                        </ul>
+                    </td>
+                    <td valign=top>
+                        <h3>What's new</h3>
+                        <table style="overflow:scroll">
+                             <tr ng-repeat="event in events">
+                                 <td>Location: {{event.location}}</td>
+                                 <td>Holding date: {{event.date}}</td>
+                             </tr>
+                        </table>
+                    </td>
                 </tr>
-            </thead>
-            <tbody>
-                <tr ng-repeat = "event in events">
-                    <td>Location: {{event.location}}</td>
-                    <td>Holding date: {{event.date}}</td>
-                </tr>
-            </tbody>
-            
-        </table>    
+            </table>
+            <div class=footer>
+                <table style="float:left">
+                    <tr>
+                        <td>facebook</td>
+                    </tr>
+                    <tr>
+                        <td>other</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        
     </body>
 </html>

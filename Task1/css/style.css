@@ -28,19 +28,25 @@ li a:hover{
     display: inherit;
     
 }
-.iframe_content{
-    padding-left: 10%;
-    
-}
-.iframe_content > iframe{
-    width: 400px;
-}
 .container{
     padding-left: 10%;
-    overflow: hidden;
-    height: 500px;
+    
+    height: 700px;
 }
 .content{
     height: 80%;
-    width: inherit;
+}
+.topImage{
+    height: 30%;
+    width: 87%;
+    left: 50px;
+    margin-left: 50px;
+    background-image: url('../image/google.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+      
+}
+.footer{
+    width:inherit;
+    height: auto;
 }
